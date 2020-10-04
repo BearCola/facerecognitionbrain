@@ -41,7 +41,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch('http://localhost:3000/')
+    fetch('https://fierce-scrubland-00267.herokuapp.com/')
       .then((response) => response.json())
       .then((data) => console.log(data));
   }, []);
@@ -81,7 +81,7 @@ function App() {
       )
       .then((response) => {
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://fierce-scrubland-00267.herokuapp.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

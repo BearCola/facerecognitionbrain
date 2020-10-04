@@ -20,7 +20,7 @@ const Register = ({ onRouteChange, loadUser }) => {
   const onSubmitSignIn = () => {
     onRouteChange('home');
 
-    fetch('http://localhost:3000/register', {
+    fetch('https://fierce-scrubland-00267.herokuapp.com/register', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
